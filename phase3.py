@@ -50,7 +50,7 @@ if prompt:
                                             the most accurate and most precise answers. Answer the following Question: {user_prompt}.
                                             Start the answer directly. No small talk please""")
     
-    model="llama3-8b-8192"
+    model="deepseek-r1-distill-llama-70b"
     groq_chat = ChatGroq(
         groq_api_key = os.environ.get("GROQ_API_KEY"),
         model_name = model
