@@ -3,13 +3,18 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 name = "pypi"
 
+[[source]]
+url = "https://download.pytorch.org/whl/cpu"
+verify_ssl = true
+name = "pytorch-cpu"
+
 [packages]
 streamlit = "*"
 langchain-groq = "*"
 langchain-community = "*"
 pypdf = "*"
 sentence-transformers = "*"
-torch = {version = "*", index = "https://download.pytorch.org/whl/cpu" }
+torch = {version = "*", index = "pytorch-cpu"}
 
 [dev-packages]
 
