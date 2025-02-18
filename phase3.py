@@ -29,7 +29,7 @@ for message in st.session_state.messages:
 
 @st.cache_resource
 def get_vectorstore():
-    pdf_name = "./mycv.pdf"
+    pdf_name = "./new.pdf"
     loaders = [PyPDFLoader(pdf_name)]
     
     # create chunks , aka vectors(chromadB)
